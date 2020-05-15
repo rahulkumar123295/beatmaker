@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i,
+svg {
+  pointer-events: none;
+}
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin-top: 4rem;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+.kick,
+.snare,
+.hihat {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.pads {
+  display: flex;
+  justify-content: space-evenly;
+}
+.kick-pad {
+  background-color: rgb(117, 219, 197);
+}
+.snare-pad {
+  background-color: rgb(228, 115, 115);
+}
+.hihat-pad {
+  background-color: rgb(126, 125, 236);
+}
+.kick-pad.active {
+  background-color: rgb(57, 134, 118);
+}
+.snare-pad.active {
+  background-color: rgb(126, 53, 53);
+}
+.hihat-pad.active {
+  background-color: rgb(54, 53, 131);
+}
+select {
+  padding: 3px 6px;
+}
+.mute-button {
+  background-color: rgb(88, 88, 88);
+  color: white;
+  padding: 3px 6px;
+  border: none;
+  cursor: pointer;
+}
+.mute-button.active {
+  background-color: rgb(36, 35, 35);
+}
+.head-title {
+  font-weight: 800;
+}
+.play-button {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+  background-color: rgb(88, 88, 88);
+  color: white;
+  cursor: pointer;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  margin-top: 3rem;
+  -webkit-appearance: none;
+  border-radius: 1rem;
+  background-color: rgb(88, 88, 88);
+  width: 350px;
+  cursor: pointer;
+  position: relative;
+}
+.tempo p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@keyframes playtrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
